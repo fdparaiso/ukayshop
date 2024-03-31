@@ -1,0 +1,30 @@
+<app-not-found>
+    [visible]="!clothes"
+    notFoundMessage="Clothes Not Found"
+    resetLinkText="Back to Homepage"
+</app-not-found>
+<div class="container">
+    <img [src]="clothes.imageUrl" [alt]="clothes.name"/>
+
+<div class="details">
+    <div class="header">
+        <span class="name">
+            {{clothes.name}}
+        </span>
+
+      <br>
+        <span class="size">
+            {{clothes.size}}
+        </span>
+        <br>
+        <span class="price">
+            &#8369; {{ clothes.price }}
+        </span>
+
+    </div>
+
+<button (click)="addToCart()"> Add to Cart</button>
+
+</div>
+
+</div>

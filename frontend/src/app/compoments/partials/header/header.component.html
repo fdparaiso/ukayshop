@@ -1,0 +1,31 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<header>
+    <div class="container">
+        <a href="#" routerLink="/" class="logo">SEASONPASS</a>
+
+        <nav>
+            <ul>
+
+                <li *ngIf="!isAuth">
+                <a routerLink="/login">Login</a>
+
+                </li>
+                <li *ngIf="isAuth"class="menu-container">
+                    <a routerLink="/dashboard">Welcome, {{user.name}}</a>
+                    <div class="menu">
+                        <a routerLink="/track">Orders</a>
+                        <a (click)="logout()">Logout</a>
+
+                    </div>
+                </li>
+                <li>
+                    <a routerLink="/cart-page">
+                        <i class="fa fa-shopping-cart" style="font-size:26px"></i>
+                        <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

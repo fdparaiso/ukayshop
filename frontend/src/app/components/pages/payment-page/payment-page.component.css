@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem;
+  margin-bottom: 6rem;
+  margin-left: 8rem;
+
+}
+
+.content {
+  width: 37rem;
+  margin-right: 3rem;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.summary > div {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+
+.summary span {
+  font-size: 1.2rem;
+}
+
+.summary h3 {
+  margin: 0 1rem 0 0;
+  flex-basis: 5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  margin-right: 42rem;
+}
+
+.button button {
+  color: white;
+  background-color: black;
+  width: 20%;
+  height: 3rem;
+  opacity: 0.8;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+.button button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
